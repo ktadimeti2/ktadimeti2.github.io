@@ -1,0 +1,50 @@
+h1 {
+   display: block;
+   font-size: 2em;
+   margin-top: 0.67em;
+   margin-bottom: 0.67em;
+   margin-left: 0;
+   margin-right: 0;
+   font-weight: bold;
+}
+
+nav{
+    display:table;
+    margin: 10px;
+    overflow:auto;
+    border-left: solid 1px #666;
+}
+
+nav li a,
+nav:hover li.active a{
+    color: #666;
+    text-decoration:none;
+    padding: 0 10px;
+    background: transparent;
+    font-size: 2em;
+    text-transform:lowercase;
+    font-family: Arial, Verdana, Sans-serif;
+    border: solid 1px #666;
+    border-width: 1px 1px 1px 0;
+}
+
+nav li{
+    float:left;
+    padding:0;
+    list-style:none;
+}
+
+nav li.active a,
+nav li a:hover,
+nav:hover li.active a:hover{
+    background: #666;
+    color:white;
+}
+
+nav li a{ /* Transition-effects */
+    transition: all 0.4s linear;
+    -o-transition: all 0.4s linear;
+    -ms-transition: all 0.4s linear;
+    -moz-transition: all 0.4s linear;
+    -webkit-transition: all 0.4s linear;
+}
